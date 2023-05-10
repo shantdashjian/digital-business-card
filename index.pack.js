@@ -420,7 +420,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App() {
     return _react2.default.createElement(
         'div',
-        null,
+        { className: 'app-container' },
         _react2.default.createElement(_Info2.default, null),
         _react2.default.createElement(_About2.default, null),
         _react2.default.createElement(_Interests2.default, null),
@@ -504,7 +504,7 @@ function About() {
         _react2.default.createElement(
             "p",
             { className: "details-text" },
-            "I'm a software developer with 10 years of experience inthe software industry. I have experience in fullstack development, backend Java development, QA engineering, and Scrum Mastery."
+            "I'm a software developer with 10 years of experience in the software industry. I have experience in fullstack development, backend Java development, QA engineering, and Scrum Mastery."
         )
     );
 }
@@ -530,7 +530,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Footer() {
     return _react2.default.createElement(
         "footer",
-        null,
+        { className: "flex" },
         _react2.default.createElement("img", { src: "images/twitter.png" }),
         _react2.default.createElement("img", { src: "images/facebook.png" }),
         _react2.default.createElement("img", { src: "images/instagram.png" }),
@@ -576,13 +576,17 @@ function Info() {
                 "Software Developer"
             ),
             _react2.default.createElement(
-                "h4",
-                null,
-                "shantdashjian.github.io"
+                "a",
+                { href: "https://github.com/shantdashjian", target: "_blank" },
+                _react2.default.createElement(
+                    "h4",
+                    null,
+                    "shantdashjian.github.io"
+                )
             ),
             _react2.default.createElement(
                 "button",
-                null,
+                { className: "flex" },
                 _react2.default.createElement("img", { className: "btn-img", src: "images/envelope.png" }),
                 " Email"
             )

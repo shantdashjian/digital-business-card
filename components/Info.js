@@ -7,8 +7,8 @@ export default function Info() {
             <section>
                 <h2>Shant Dashjian</h2>
                 <h3>Software Developer</h3>
-                <h4>shantdashjian.github.io</h4>
-                <button><img className="btn-img" src="images/envelope.png"/> Email</button>
+                <a href="https://github.com/shantdashjian" target="_blank"><h4>shantdashjian.github.io</h4></a>
+                <button className="flex"><img className="btn-img" src="images/envelope.png"/> Email</button>
             </section>
         </header>
     )

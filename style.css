@@ -5,6 +5,14 @@
     background: #F5F5F5;
 }
 
+body {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
 .image {
     width: 100%;
 }
@@ -43,7 +51,6 @@ h4 {
 
 button {
     padding: 9px 0px 9px 0px;
-    display: flex;
     align-items: center;
     border: 1px solid #D1D5DB;
     width: 100%;
@@ -78,13 +85,20 @@ button:hover {
 
 footer {
     height: 64px;
-    box-sizing: content-box;
     background: #D5D4D8;
     margin-top: 31px;
     padding-top: 19px;
-    display: flex;
     padding-bottom: 19px;
-    box-sizing: border-box;
     justify-content: center;
     gap: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    .app-container {
+        width: 500px;
+    }
 }
